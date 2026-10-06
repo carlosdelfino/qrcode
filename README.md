@@ -10,7 +10,8 @@ Aplicação React + TypeScript + Vite para criar QR Codes estilizados de forma c
   - **WhatsApp** (com mensagem pré-preenchida)
   - **Cartão de visitas** (vCard com nome, empresa, cargo, telefone, WhatsApp, e-mail e site)
 - Personalização visual:
-  - Cor do QR Code e cor do fundo via seletores de cores
+  - Cor do QR Code via seletor de cores
+  - Fundo do QR Code sempre branco
   - Formato dos pontos: quadrado, pontos, arredondado, super arredondado, elegante e elegante arredondado
   - Formato geral: quadrado ou circular
   - Estilos independentes para cantos externos e internos
@@ -38,6 +39,21 @@ npm run preview
 
 # Lint
 npm run lint
+```
+
+## Deploy no Vercel
+
+O projeto já está configurado para deploy no Vercel. Acesse [vercel.com](https://vercel.com), importe o repositório e use as seguintes configurações (já definidas em `vercel.json`):
+
+- **Framework Preset:** Vite
+- **Build Command:** `npm run build`
+- **Output Directory:** `dist`
+
+Ou faça deploy pela CLI:
+
+```bash
+npm i -g vercel
+vercel --prod
 ```
 
 ## Tecnologias
