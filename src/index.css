@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  /* Tema claro — padrão do site rapport.tec.br. */
+
+  /* Textos */
+  --text: #5a3823;        /* Marrom escuro — texto base */
+  --text-h: #F05F40;      /* Laranja Rapport — títulos e destaques */
+
+  /* Superfícies */
+  --bg: #ffffff;          /* Branco puro — fundo principal */
+  --border: rgba(34, 34, 34, 0.15); /* Borda sutil sobre fundo claro */
+  --code-bg: #f9f9f9;     /* Cinza muito claro — fundo de cards/seções */
+
+  /* Acentos */
+  --accent: #F05F40;      /* Laranja Rapport — botões e elementos ativos */
+  --accent-bg: rgba(240, 95, 64, 0.1);
+  --accent-border: rgba(240, 95, 64, 0.5);
+
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  /* Tema escuro — ativado manualmente pelo usuário. */
+
+  /* Textos */
+  --text: #f7d4ca;        /* Pêssego suave — texto base */
+  --text-h: #F05F40;      /* Laranja Rapport — títulos e destaques */
+
+  /* Superfícies */
+  --bg: #222222;          /* Preto grafite — fundo principal */
+  --border: rgba(255, 255, 255, 0.15); /* Borda sutil sobre fundo escuro */
+  --code-bg: #5a3823;     /* Marrom escuro — fundo de cards/seções */
+
+  /* Acentos */
+  --accent: #f39c12;      /* Dourado Rapport — botões e elementos ativos */
+  --accent-bg: rgba(243, 156, 18, 0.15);
+  --accent-border: rgba(243, 156, 18, 0.5);
+
+  color-scheme: dark;
+}
+
+:root {
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background: var(--bg);
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+}
